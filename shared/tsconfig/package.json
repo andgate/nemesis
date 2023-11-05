@@ -1,0 +1,15 @@
+{
+  "name": "@nemesis/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json"
+  ],
+  "scripts": {
+    "lint": "eslint *.json",
+    "clean": "rimraf node_modules .turbo"
+  },
+  "devDependencies": {
+    "@nemesis/eslint-config": "workspace:*"
+  }
+}

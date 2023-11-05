@@ -1,0 +1,16 @@
+{
+  "extends": "@nemesis/tsconfig/base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

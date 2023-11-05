@@ -1,0 +1,25 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "svelte",
+    "json"
+  ],
+  "[svelte]": {
+    "editor.formatOnSave": true,
+    // By default svelte files are formatted by the svelte VSCode extension
+    // instead of the prettier extension and the svelte extension ignores
+    // the .prettierc config file.
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
