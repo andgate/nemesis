@@ -4,7 +4,7 @@
   export let message: ChatMessage
 </script>
 
-<div id="chat-message" class="card bg-base-100 w-96 shadow-xl">
+<div id="chat-message" class="card card-compact bg-base-100 w-96 shadow-xl">
   <div class="card-body">
     <h2 class="card-title">{message.participant}</h2>
     <p>

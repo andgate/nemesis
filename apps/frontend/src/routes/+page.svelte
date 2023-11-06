@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Chat } from '@nemesis/ui'
+  import { Chat } from '@nemesis/chat'
 </script>
 
 <svelte:head>

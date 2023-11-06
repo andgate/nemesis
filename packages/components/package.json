@@ -1,0 +1,23 @@
+{
+  "name": "@nemesis/components",
+  "version": "0.0.0",
+  "description": "Nemesis UI Components",
+  "private": true,
+  "type": "module",
+  "files": ["./index.ts"],
+  "scripts": {
+    "lint": "prettier --check --ignore-path=../../.prettierignore . && eslint \".\"",
+    "format": "prettier --write --ignore-path=../../.prettierignore .",
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@nemesis/chat": "workspace:*"
+  },
+  "devDependencies": {
+    "@nemesis/eslint-config": "workspace:*",
+    "@nemesis/tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "svelte": "4.2.2"
+  }
+}

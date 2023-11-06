@@ -24,3 +24,5 @@ npm-debug.log*
 
 # turbo
 .turbo
+
+.svelte-kit

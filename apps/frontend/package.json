@@ -19,7 +19,8 @@
     "clean": "rimraf node_modules .svelte-kit .turbo"
   },
   "dependencies": {
-    "@nemesis/ui": "workspace:*"
+    "@nemesis/components": "workspace:*",
+    "@nemesis/chat": "workspace:*"
   },
   "devDependencies": {
     "@nemesis/eslint-config": "workspace:*",

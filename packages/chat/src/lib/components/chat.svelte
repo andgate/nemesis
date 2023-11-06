@@ -18,4 +18,6 @@
   ]
 </script>
 
-<ChatMessageList {messages} />
+<div>
+  <ChatMessageList {messages} />
+</div>
