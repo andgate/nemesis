@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "./base.json",
+    "@tsconfig/svelte/tsconfig.json"
+  ]
+}

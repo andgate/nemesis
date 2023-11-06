@@ -2,20 +2,27 @@
   "name": "@nemesis/chat",
   "version": "0.0.0",
   "description": "A completely generic and boring UI components library",
-  "private": true,
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "package.json",
+    "dist/**/*.js",
+    "dist/**/*.svelte",
+    "dist/**/*.d.ts",
+    "dist/**/*.svelte.d.ts",
+    "dist/**/*.d.ts.map",
+    "dist/**/*.svelte.d.ts.map"
+  ],
   "exports": {
+    "./package.json": "./package.json",
     ".": {
       "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js",
-      "main": "./dist/index.js"
+      "svelte": "./dist/index.js"
     },
     "./chat.svelte": {
-      "types": "./dist/components/chat.d.ts",
-      "svelte": "./dist/components/chat.js",
-      "main": "./dist/components/chat.js"
-    }
+      "types": "./dist/components/chat.svelte.d.ts",
+      "svelte": "./dist/components/chat.svelte"
+    },
+    "./models/chat.js": "./dist/models/chat.js"
   },
   "scripts": {
     "build": "svelte-package",
@@ -31,11 +38,12 @@
     "@nemesis/eslint-config": "workspace:*",
     "@nemesis/tsconfig": "workspace:*",
     "@sveltejs/package": "2.2.2",
-    "tailwind-config": "workspace:*",
-    "@sveltejs/adapter-node": "1.3.1",
-    "@sveltejs/kit": "1.27.3"
+    "tailwind-config": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "4.2.2"
+    "svelte": "4.2.2",
+    "svelte-preprocess": "5.0.4",
+    "flowbite": "2.0.0",
+    "flowbite-svelte": "0.44.19"
   }
 }

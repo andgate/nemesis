@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "files": [
-    "base.json"
+    "base.json",
+    "svelte.json"
   ],
   "scripts": {
     "lint": "eslint *.json",
@@ -11,5 +12,8 @@
   },
   "devDependencies": {
     "@nemesis/eslint-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "@tsconfig/svelte": "5.0.2"
   }
 }

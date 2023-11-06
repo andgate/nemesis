@@ -1,8 +1,11 @@
 {
-  "extends": "@nemesis/tsconfig/base.json",
+  "extends": [
+    "@nemesis/tsconfig/base.json"
+  ],
   "compilerOptions": {
     "rootDir": ".",
-    "noEmit": true
+    "noEmit": true,
+    "verbatimModuleSyntax": false
   },
   "include": [
     "src/**/*.ts",
@@ -12,5 +15,6 @@
   ],
   "exclude": [
     "node_modules",
+    "dist",
   ]
 }

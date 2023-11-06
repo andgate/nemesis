@@ -18,6 +18,6 @@
   ]
 </script>
 
-<div>
+<div class="bg-slate-50 p-2 drop-shadow-md">
   <ChatMessageList {messages} />
 </div>

@@ -6,7 +6,10 @@
   <title>My App</title>
 </svelte:head>
 
-<main class="relative m-0 block h-full w-full overflow-hidden p-0">
+<main
+  id="app-main"
+  class="relative m-0 block h-full w-full overflow-hidden p-0"
+>
   <Chat />
 </main>
 
