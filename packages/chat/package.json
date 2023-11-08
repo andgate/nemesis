@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "svelte-package",
-    "build:watch": "svelte-package -w",
+    "dev": "svelte-package -w",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",

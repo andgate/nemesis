@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    '../../packages/ui/components/**/*.{html,js,svelte,ts}',
-    './src/**/*.{html,js,svelte,ts}'
+    './src/**/*.{html,js,svelte,ts}',
+    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
+    './node_modules/@nemesis/**/*.{html,js,svelte,ts}'
   ],
   plugins: [require('flowbite/plugin')],
   darkMode: 'class',
